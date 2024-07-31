@@ -1,0 +1,116 @@
+/* Root Section Start Here */
+:root {
+  --darkCyan: hsl(158, 36%, 37%);
+  --creamColor: hsl(30, 38%, 92%);
+  --veryDarkBlue: hsl(212, 21%, 14%);
+  --darkGrayishBlue: hsl(228, 12%, 48%);
+  --whiteColor: hsl(0, 0%, 100%);
+}
+/* Root Section End Here */
+/* Reset Code Start Here */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Reset Code End Here */
+body {
+  background-color: var(--creamColor);
+  padding: 8%;
+}
+section {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section img {
+  width: 50%;
+  height: 477px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.mobile-image {
+  display: none;
+}
+.text-section {
+  background-color: var(--whiteColor);
+  padding: 25px 40px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.text-section h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  color: var(--darkGrayishBlue);
+  margin-bottom: 16px;
+}
+.text-section h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 38px;
+  margin-bottom: 24px;
+}
+.text-section p {
+  font-weight: 1rem;
+  font-weight: 400;
+  color: var(--darkGrayishBlue);
+  line-height: 24px;
+  margin-bottom: 34px;
+}
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.text-section span {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--darkCyan);
+}
+.text-section del {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--darkGrayishBlue);
+}
+.text-section button {
+  width: 100%;
+  height: 45px;
+  background-color: var(--darkCyan);
+  border: none;
+  border-radius: 10px;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.text-section button:hover {
+  background-color: hsl(158, 42%, 29%);
+}
+/* Responsive Mobile view Design */
+@media only screen and (max-width: 375px) {
+  section {
+    width: 95%;
+    flex-direction: column;
+  }
+  .mobile-image {
+    display: block;
+  }
+  .desktop-images {
+    display: none;
+  }
+  section img {
+    width: 100%;
+    height: 240px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+  }
+  .text-section {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+}
